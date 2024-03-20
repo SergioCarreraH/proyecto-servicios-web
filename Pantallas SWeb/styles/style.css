@@ -1,0 +1,44 @@
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(243, 245, 245); /* Semi-transparent overlay */
+}
+
+header .logo {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Add this to remove default margin */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: black; /* Lighter green for hover effect */
+}
+
+
+

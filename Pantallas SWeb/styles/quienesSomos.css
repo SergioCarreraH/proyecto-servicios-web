@@ -1,0 +1,145 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+
+}header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(243, 245, 245); /* Semi-transparent overlay */
+}
+
+header .logo {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Add this to remove default margin */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: black; /* Lighter green for hover effect */
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+   
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bike-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: for rounded corners on the image */
+}
+
+.text-content {
+    width: 50%;
+    padding: 0 20px;
+}
+
+.text-content h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: rgb(61, 204, 133);
+}
+
+.text-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .text-content, .bike-image {
+        width: 100%;
+    }
+
+    .text-content {
+        padding: 20px 0;
+    }
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center; /* Center the cards horizontally */
+    gap: 20px;
+   
+}
+
+.card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card img {
+    width: 80px; /* Adjust based on your image */
+    height: 80px; /* Adjust based on your image */
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #ff5e00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+}

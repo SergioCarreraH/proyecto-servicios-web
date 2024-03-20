@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión</title>
+    <link rel="stylesheet" href="styles/login.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Iniciar sesión</h2>
+        <form id="loginForm">
+            <div class="input-container">
+                <label for="username">Usuario</label>
+                <input id="username" type="text" placeholder="Text">
+            </div>
+            <div class="input-container">
+                <label for="password">Contraseña</label>
+                <input id="password" type="password" placeholder="Text">
+            </div>
+            <button type="button" onclick="login()">Entrar</button>
+        </form>
+    </div>
+    <script>
+        function login() {
+            // Dummy login function for demonstration. Implement actual login logic here.
+            alert("Login attempt with username: " + document.getElementById('username').value);
+        }
+    </script>
+</body>
+</html>

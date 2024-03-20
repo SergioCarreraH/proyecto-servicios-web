@@ -1,0 +1,140 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(243, 245, 245); /* Semi-transparent overlay */
+}
+
+header .logo {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Add this to remove default margin */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: black; /* Lighter green for hover effect */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+   
+    text-align: center;
+}
+
+.productos-header h1 {
+    color: #d35400;
+}
+
+.productos-header p {
+    font-size: 20px;
+    margin-top: 5px;
+    color: #555;
+}
+
+.productos-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.producto {
+    width: 30%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.producto img {
+    width: 400px;
+    height: 300px;
+    border-radius: 8px;
+}
+
+.producto h2 {
+    margin: 20px 0 10px;
+    color: #333;
+}
+
+.producto p {
+    color: #666;
+    font-size: 14px;
+}
+
+button {
+    background-color: #d35400;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #e67e22;
+}
+
+/* Adjustments for tablets */
+@media (max-width: 768px) {
+    .productos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .producto {
+        width: 80%; /* Makes the product cards wider on smaller screens */
+        margin-bottom: 20px; /* Adds space between vertically stacked cards */
+    }
+
+    .producto img {
+        width: 100%; /* Makes images responsive within their containers */
+        height: auto; /* Maintains aspect ratio */
+    }
+}
+
+/* Adjustments for mobile phones */
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        display: block; /* Stacks the nav items vertically */
+        margin: 10px 0; /* Adds some space between the nav items */
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .producto {
+        width: 90%; /* Gives more width to product cards on very small screens */
+    }
+}

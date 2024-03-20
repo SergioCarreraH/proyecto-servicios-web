@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(243, 245, 245); /* Semi-transparent overlay */
+}
+
+header .logo {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Add this to remove default margin */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: black; /* Lighter green for hover effect */
+}
+
+.container {
+    display: flex;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.image-section img {
+    width: 300px;
+    height: auto;
+    border-right: 1px solid #ddd;
+}
+
+.text-section {
+    padding: 20px;
+}
+
+.text-section h1, .text-section h2 {
+    margin: 0 0 10px 0;
+}
+
+.underline, .sub-underline {
+    height: 3px;
+    width: 50px;
+    background-color: red;
+    margin-bottom: 20px;
+}
+
+.sub-section {
+    margin-bottom: 20px;
+}
+
+p {
+    color: #555;
+    line-height: 1.6;
+}
+.productos-header h1 {
+    color: #d35400;
+    padding: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        margin: 20px auto; /* Center the container on smaller screens */
+    }
+
+    .image-section img {
+        width: 100%; /* Make the image full width */
+        border-right: none; /* Remove the border-right in the mobile view */
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Add vertical spacing between nav items */
+    }
+
+    .text-section {
+        padding: 20px;
+    }
+
+    header .logo img {
+        width: 40px; /* Slightly reduce the logo size on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px; /* Reduce body padding on very small screens */
+    }
+
+    .text-section h1, .text-section h2 {
+        font-size: 1.5em; /* Adjust heading sizes for small screens */
+    }
+
+    p {
+        font-size: 0.9em; /* Adjust paragraph text size for better readability */
+    }
+}
